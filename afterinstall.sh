@@ -1,4 +1,6 @@
 #!/bin/bash
 
 cd /home/ubuntu
-sudo apt npm -f install
+npm -f install
+$(/home/ubuntu/.local/bin/aws ecr get-login --no-include-email --region us-east-1)
+
